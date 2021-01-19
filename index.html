@@ -9,22 +9,22 @@
         <h1 id="title">Fire Emblem Survey Form</h1>
         <p id="description">Let us know how you feel about Fire Emblem!</p>
         <form id="survey-form">
-            <div>
+            <div id="namediv">
                 <label for="name" id="name-label">Enter your name:</label>
             
                 <input type="text" id="name" name="name">
             </div>
-            <div>
+            <div id="emaildiv">
                 <label for="email" id="email-label">Enter your e-mail:</label>
             
                 <input type="email" id="email" name="email">
             </div>
-            <div>
+            <div id="numberdiv">
                 <label for="number" id="number-label">Enter your age (18-99):</label>
             
                 <input type="numeric" id="number" name="number" min="18" max="99">
             </div>
-            <div>
+            <div id="dropdowndiv">
                 <label for="dropdown" id="dropdown-label">What was your first introduction to the Fire Emblem series?</label>
                 <select id="dropdown" name="dropdown">
                     <option value="1">Playing as Marth and Roy in Super Smash Brothers: Melee</option>
@@ -35,8 +35,8 @@
                     <option value="6">Other, or I haven't played Fire Emblem in any capacity</option>
                 </select>
             </div>
-            <div>
-                <label>Favourite Fire Emblem era</label>
+            <div id="radiodiv">
+                <label>Favourite Fire Emblem era:</label>
                 <input type="radio" id="snes" name="snes" value="snes">
                 <label for="snes">NES/SNES era</label>
                 <input type="radio" id="gba" name="gba" value="gba">
@@ -47,6 +47,27 @@
                 <label for="ds">DS era</label>
                 <input type="radio" id="3ds" name="3ds" value="3ds">
                 <label for="3ds">3DS era</label>
+            </div>
+            <div id="checkboxdiv">
+                <label>Japen-only games that you've played (Check all that apply):</label>
+                <input type="checkbox" id="game1" name="game1" value="FE1">
+                <label for="game1">Fire Emblem Shadow Dragon</label>
+                <input type="checkbox" id="game2" name="game2" value="FE2">
+                <label for="game2">Fire Emblem Gaiden</label>
+                <input type="checkbox" id="game3" name="game3" value="FE3">
+                <label for="game3">Fire Emblem Mystery of the Emblem</label>
+                <input type="checkbox" id="game4" name="game4" value="FE4">
+                <label for="game4">Fire Emblem Geneaology of the Holy War</label>
+                <input type="checkbox" id="game5" name="game5" value="FE5">
+                <label for="game5">Fire Emblem Thracia 776</label>
+            </div>
+            <div id="commentdiv">
+                <label for="comment" id="comment-label">Please leave any feedback for this form:</label>
+            
+                <input type="text" id="comment" name="comment">
+            </div>
+            <div id="submitdiv">
+                <input type="submit" value="Submit">
             </div>
         </form>
     </body>

@@ -23,6 +23,7 @@ body {
     flex-direction: column;
     max-width: 100%;
     background-color: cornflowerblue;
+    opacity: 80%;
     align-self: center;
     width: 75%;
 }
