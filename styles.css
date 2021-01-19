@@ -1,6 +1,6 @@
 div {
     display: flex;
-    padding: 10px 20px 10px 20px;
+    margin: 10px 20px 10px 20px;
     text-align: center;
     flex-direction: column;
     align-self: center;
@@ -22,8 +22,22 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    background-color: cornflowerblue;
+    background-color: royalblue;
     opacity: 80%;
     align-self: center;
     width: 75%;
+}
+#titlediv {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    max-width: 100%;
+    background-color: royalblue;
+    color: gold;
+    opacity: 80%;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
 }

@@ -6,23 +6,25 @@
         <title>FE Survey Form</title>
     </head>
     <body>
-        <h1 id="title">Fire Emblem Survey Form</h1>
-        <p id="description">Let us know how you feel about Fire Emblem!</p>
+        <div id="titlediv">
+            <h1 id="title">Fire Emblem Survey Form</h1>
+            <p id="description">Let us know how you feel about Fire Emblem!</p>
+        </div>
         <form id="survey-form">
             <div id="namediv">
                 <label for="name" id="name-label">Enter your name:</label>
             
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
             </div>
             <div id="emaildiv">
                 <label for="email" id="email-label">Enter your e-mail:</label>
             
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
             </div>
             <div id="numberdiv">
                 <label for="number" id="number-label">Enter your age (18-99):</label>
             
-                <input type="numeric" id="number" name="number" min="18" max="99">
+                <input type="number" id="number" name="number" min="18" max="99" placeholder="18">
             </div>
             <div id="dropdowndiv">
                 <label for="dropdown" id="dropdown-label">What was your first introduction to the Fire Emblem series?</label>
@@ -37,15 +39,15 @@
             </div>
             <div id="radiodiv">
                 <label>Favourite Fire Emblem era:</label>
-                <input type="radio" id="snes" name="snes" value="snes">
+                <input type="radio" id="snes" name="game" value="snes">
                 <label for="snes">NES/SNES era</label>
-                <input type="radio" id="gba" name="gba" value="gba">
+                <input type="radio" id="gba" name="game" value="gba">
                 <label for="gba">GBA era</label>
-                <input type="radio" id="gc" name="gc" value="gc">
+                <input type="radio" id="gc" name="game" value="gc">
                 <label for="gc">GC/Wii era</label>
-                <input type="radio" id="ds" name="ds" value="ds">
+                <input type="radio" id="ds" name="game" value="ds">
                 <label for="ds">DS era</label>
-                <input type="radio" id="3ds" name="3ds" value="3ds">
+                <input type="radio" id="3ds" name="game" value="3ds">
                 <label for="3ds">3DS era</label>
             </div>
             <div id="checkboxdiv">
@@ -64,10 +66,10 @@
             <div id="commentdiv">
                 <label for="comment" id="comment-label">Please leave any feedback for this form:</label>
             
-                <input type="text" id="comment" name="comment">
+                <textarea id="comment" name="comment" placeholder="Enter your comments here"></textarea>
             </div>
             <div id="submitdiv">
-                <input type="submit" value="Submit">
+                <input type="submit" id="submit" value="Submit">
             </div>
         </form>
     </body>
