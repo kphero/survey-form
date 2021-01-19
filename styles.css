@@ -1,13 +1,21 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
 div {
     display: flex;
-    margin: 10px 20px 10px 20px;
-    text-align: center;
+    margin-bottom: 0.5rem;
     flex-direction: column;
-    align-self: center;
+    align-items: center;
+    
 }
-input {
-    max-width: 100%;
-    align-self: center;
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
 }
 body {
     background-color: darkgrey;
@@ -22,10 +30,9 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    background-color: royalblue;
+    background-color: rgb(216, 218, 240);
     opacity: 80%;
     align-self: center;
-    width: 75%;
 }
 #titlediv {
     display: flex;
@@ -35,9 +42,16 @@ body {
     border-radius: 25px;
     border: 2px solid #000000;
     max-width: 100%;
-    background-color: royalblue;
-    color: gold;
+    background-color: rgb(216, 218, 240);
+    color: royalblue;
     opacity: 80%;
     padding: 10px 10px 10px 10px;
     margin: 10px 10px 10px 10px;
+}
+p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+#radiodiv, #checkboxdiv{
+    font-size: 1rem;
 }
