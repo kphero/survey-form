@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="styles.css" type="text/css" rel="stylesheet">
+        <title>FE Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">Fire Emblem Survey Form</h1>
+        <p id="description">Let us know how you feel about Fire Emblem!</p>
+        <form id="survey-form">
+            <div>
+                <label for="name" id="name-label">Enter your name:</label>
+            
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label for="email" id="email-label">Enter your e-mail:</label>
+            
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="number" id="number-label">Enter your age (18-99):</label>
+            
+                <input type="numeric" id="number" name="number" min="18" max="99">
+            </div>
+            <div>
+                <label for="dropdown" id="dropdown-label">What was your first introduction to the Fire Emblem series?</label>
+                <select id="dropdown" name="dropdown">
+                    <option value="1">Playing as Marth and Roy in Super Smash Brothers: Melee</option>
+                    <option value="2">I started with a Japan only game (FE1-FE6)</option>
+                    <option value="3">I started with the first NA release, Fire Emblem (FE7)</option>
+                    <option value="4">I started with the most mainstream game, Fire Emblem Awakening</option>
+                    <option value="5">I started with the latest release, Fire Emblem Three Houses</option>
+                    <option value="6">Other, or I haven't played Fire Emblem in any capacity</option>
+                </select>
+            </div>
+            <div>
+                <label>Favourite Fire Emblem era</label>
+                <input type="radio" id="snes" name="snes" value="snes">
+                <label for="snes">NES/SNES era</label>
+                <input type="radio" id="gba" name="gba" value="gba">
+                <label for="gba">GBA era</label>
+                <input type="radio" id="gc" name="gc" value="gc">
+                <label for="gc">GC/Wii era</label>
+                <input type="radio" id="ds" name="ds" value="ds">
+                <label for="ds">DS era</label>
+                <input type="radio" id="3ds" name="3ds" value="3ds">
+                <label for="3ds">3DS era</label>
+            </div>
+        </form>
+    </body>
+</html>
